@@ -1,0 +1,11 @@
+.Service {
+  padding-top: 10px;
+  padding-bottom: 40px;
+  width: 100%;
+}
+
+@media screen and (max-width: 1140px) {
+  .Service {
+    padding: 20px;
+  }
+}

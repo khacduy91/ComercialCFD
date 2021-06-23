@@ -1,0 +1,54 @@
+.menuCategory {
+  &-ul {
+    list-style: none;
+    padding: 0px;
+    margin-bottom: 15px;
+    // padding: 8px 0;
+
+    &-li {
+      padding: 8px 0;
+      padding-left: 15px;
+    }
+  }
+
+  &-Select {
+    width: 100%;
+    font-family: "Asap", sans-serif;
+    display: none;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .menuCategory {
+    &-ul {
+      display: none;
+    }
+    &-Select {
+      display: block;
+
+      .ant-select-arrow {
+        right: 20px !important;
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .menuCategory {
+    &-ul {
+      display: none;
+    }
+    &-Select {
+      display: block;
+    }
+  }
+}
+@media screen and (max-width: 576px) {
+  .menuCategory {
+    &-ul {
+      display: none;
+    }
+    &-Select {
+      display: block;
+    }
+  }
+}

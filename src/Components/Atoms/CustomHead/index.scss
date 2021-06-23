@@ -1,0 +1,40 @@
+.customHead {
+  width: 100%;
+  padding: 20px 10%;
+  background-color: #f9f9f9;
+  &-title {
+    font-size: 35px;
+    text-align: center;
+    font-family: "Asap", sans-serif;
+    color: "#232323";
+    // padding-bottom: 5px;
+    font-weight: 400;
+    width: 100%;
+    margin-bottom: 0;
+    padding-bottom: 5px;
+    text-transform: capitalize;
+  }
+
+  &-Breadcrum {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: "Asap", sans-serif;
+    color: #767676;
+
+    a {
+      text-transform: lowercase;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .CustomHead {
+    &-title {
+      font-size: 27px;
+    }
+    &-Breadcrum {
+      font-size: 13px;
+    }
+  }
+}

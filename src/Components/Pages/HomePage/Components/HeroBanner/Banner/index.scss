@@ -1,0 +1,153 @@
+.banner {
+  width: 100%;
+
+  &-Row {
+    min-height: 600px;
+    background-position: 50%;
+    background-size: cover;
+
+    &-Col {
+      height: 100%;
+      opacity: 1;
+    }
+
+    &-Image {
+      width: 100%;
+    }
+
+    &-Link {
+      font-size: 65px;
+      color: #232323;
+      font-family: "Asap", sans-serif;
+      font-weight: 900;
+      transition: all 0.5s ease;
+      text-transform: uppercase;
+      line-height: 1;
+      &:hover {
+        padding-left: 5px;
+        color: #232323;
+      }
+    }
+
+    &-Description {
+      font-size: 17px;
+      color: #232323;
+      font-family: "Asap", sans-serif;
+    }
+
+    &-CTA {
+      color: #1890ff;
+      background: transparent;
+      border-color: #1890ff;
+      padding: 5px 17px;
+      margin-top: 20px;
+      font-size: 17px;
+      font-weight: 500;
+      font-family: "Asap", sans-serif;
+      height: auto;
+
+      &:hover {
+        background-color: #1890ff;
+        color: white;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .Banner {
+    &-Row {
+      &-Link {
+        font-size: 60px;
+      }
+
+      &-CTA {
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .banner {
+    &-Row {
+      background-position: right;
+
+      &-Link {
+        font-size: 55px;
+        text-shadow: 1px 2px 4px #188fffaf;
+      }
+
+      &-CTA {
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .banner {
+    &-Row {
+      padding: 0 10px;
+      background-position: left;
+
+      & > div {
+        max-height: 300px;
+      }
+
+      &-Col {
+        text-align: center;
+      }
+
+      &-Image {
+        img {
+          display: none;
+        }
+      }
+
+      &-Link {
+        font-size: 50px;
+        text-shadow: 1px 2px 4px #188fffaf;
+      }
+
+      &-Description {
+        margin-bottom: 5px;
+      }
+
+      &-CTA {
+        font-size: 13px;
+        margin-top: 0px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .banner {
+    &-Row {
+      padding: 0 10px;
+      background-position: left;
+
+      & > div {
+        max-height: 300px;
+      }
+
+      &-Col {
+        text-align: center;
+      }
+
+      &-Link {
+        font-size: 40px;
+      }
+
+      &-Description {
+        margin-bottom: 5px;
+      }
+
+      &-CTA {
+        font-size: 11px;
+        margin-top: 10px;
+      }
+    }
+  }
+}

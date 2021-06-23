@@ -1,0 +1,55 @@
+.adsBanner {
+  background-size: cover;
+  padding: 80px 50px;
+  background-position: center right;
+
+  &-title {
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 700;
+    font-family: 'Asap', sans-serif;
+    color: #232323;
+    margin-bottom: 0;
+    text-shadow: 1px 1px 3px #ffffff90;
+    span {
+      color: #ef3f49;
+    }
+  }
+
+  &-description {
+    font-size: 16px;
+    font-weight: 400px;
+    font-family: 'Asap', sans-serif;
+    line-height: 24px;
+    color: #888888;
+    // box-shadow: 1px 1px 3px black;
+  }
+
+  &-input {
+    width: 70%;
+    padding: 0 20px;
+    background: transparent;
+    font-size: 14px;
+    line-height: 1;
+    height: 49px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 1px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: none;
+  }
+
+  &-button {
+    width: 27%;
+    margin-left: 2%;
+    border-color: black;
+    background-color: black;
+    border-radius: 1px;
+    color: white;
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 400;
+    padding: 16.5px;
+    height: 49px;
+  }
+}

@@ -1,0 +1,91 @@
+.newsCard {
+  padding-bottom: 30px;
+  &-image {
+    width: 100%;
+  }
+
+  &-Col {
+    display: flex;
+    flex-direction: column;
+
+    a {
+      display: inline-block;
+      &:hover {
+        color: #1890ff;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &-Container {
+    background: white;
+    display: block;
+    padding-bottom: 19px;
+
+    a {
+      color: #232323;
+      transition: all 1s ease;
+
+      &:hover {
+        h3 {
+          color: #1890ff;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  &-Meta {
+    padding: 0 25px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #888888;
+    font-weight: 400;
+    font-family: 'Asap', sans-serif;
+
+    span {
+      color: #ef3f49;
+    }
+  }
+
+  &-Headline {
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 600;
+    font-family: 'Asap', sans-serif;
+    padding: 25px 25px 10px 25px;
+    margin-bottom: 0;
+    margin-top: -25px;
+    background: white;
+    z-index: 1;
+  }
+
+  &-Content {
+    padding: 0 25px;
+    font-size: 14px;
+    line-height: 21px;
+    color: #888888;
+    font-weight: 300;
+    font-family: 'Asap', sans-serif;
+    text-align: justify;
+  }
+
+  &-Button {
+    margin-left: 25px;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 16px;
+    border-radius: 1px;
+    color: black;
+    border-color: black;
+    transition: all 0.5s ease;
+    background: transparent;
+    padding: 4px 20px;
+
+    &:hover {
+      color: white;
+      background-color: black;
+      border-color: black;
+    }
+  }
+}

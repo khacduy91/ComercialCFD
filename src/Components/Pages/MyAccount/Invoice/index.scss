@@ -1,0 +1,172 @@
+.invoice {
+  position: relative;
+
+  &-logo {
+    font-family: "Asap", sans-serif;
+    color: white;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-bottom: 0;
+    font-size: 51px;
+    font-weight: 500;
+    line-height: 1;
+    left: 5%;
+  }
+  &-header {
+    background: #1890ff;
+    padding: 15px 0;
+
+    &-col {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 5px 0px;
+      &-text {
+        margin-bottom: 0;
+        font-family: "Asap", sans-serif;
+        color: white;
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 17px;
+        text-align: right;
+
+        &.elipse {
+          text-overflow: ellipsis;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+
+  &-client {
+    padding: 30px 0;
+    &-col {
+      &-label {
+        margin-bottom: 0;
+        font-family: "Asap", sans-serif;
+        font-size: 13px;
+        color: rgb(91, 91, 91);
+        text-decoration: underline;
+      }
+
+      &-text {
+        margin-bottom: 0;
+        font-family: "Asap", sans-serif;
+        text-align: justify;
+        font-size: 13px;
+        &.name {
+          color: #1890ff;
+          font-size: 20px;
+          line-height: 25px;
+        }
+        &.number {
+          color: #1890ff;
+          line-height: 25px;
+        }
+        &.day {
+          font-style: italic;
+        }
+        &.total {
+          font-size: 40px;
+          line-height: 1;
+          color: #1890ff;
+          font-weight: 500;
+        }
+      }
+
+      &.total {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-between;
+      }
+    }
+  }
+
+  &-cart {
+    border-top: 3px solid #1890ff;
+    &-table {
+      width: 100%;
+      &-img {
+        width: 50px;
+        object-fit: contain;
+      }
+      &-title {
+        font-family: "Asap", sans-serif;
+        font-size: 13px;
+        &.price,
+        &.total {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+      &-td {
+        font-family: "Asap", sans-serif;
+        font-size: 13px;
+        position: relative;
+
+        &.price {
+          float: right;
+        }
+        &.quanity {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+        }
+        &.total {
+          float: right;
+        }
+        &.finalPrice {
+          float: right;
+          font-size: 15px;
+          font-weight: 500;
+        }
+        &.shipping {
+          float: right;
+          // position: absolute;
+          // left: 50%;
+          // top: 50%;
+          // transform: translate(-50%, -50%);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .invoice {
+    &-logo {
+      position: relative;
+      left: 5px;
+    }
+    &-header {
+      padding: 0;
+      &-col {
+        &-text {
+          text-align: left;
+          padding-left: 5px;
+        }
+      }
+    }
+
+    &-client {
+      &-col {
+        &-text {
+          &.total {
+            font-size: 30px;
+          }
+        }
+      }
+    }
+
+    &-cart-table {
+      .ant-table-cell {
+        padding: 2px !important;
+      }
+    }
+  }
+}

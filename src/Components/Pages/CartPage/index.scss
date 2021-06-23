@@ -1,0 +1,129 @@
+.emptyCart {
+  display: block;
+  text-align: center;
+  padding: 30px 0;
+
+  &-title {
+    font-family: 'Asap', sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    color: #232323;
+    line-height: 44px;
+    margin-bottom: 0;
+    margin-top: 30px;
+  }
+
+  &-des {
+    font-family: 'Asap', sans-serif;
+    font-size: 19px;
+    font-weight: 300;
+    line-height: 29px;
+    color: #888888;
+    margin-bottom: 15px;
+  }
+
+  &-button {
+    font-family: 'Asap', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 29px;
+    color: #1890ff;
+    border: 1px solid #1890ff;
+
+    &:hover {
+      background-color: #1890ff;
+      color: white;
+    }
+  }
+}
+
+.cartItem {
+  list-style: none;
+  &-Image {
+    width: 100%;
+  }
+
+  &-row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-name {
+    font-family: 'Asap', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #303030;
+    font-weight: 500;
+  }
+  &-price {
+    font-family: 'Asap', sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    color: #303030;
+    font-weight: 500;
+  }
+
+  &-attribute {
+    font-family: 'Asap', sans-serif;
+    font-size: 13px;
+    line-height: 23px;
+    color: #767676;
+    font-weight: 400;
+  }
+
+  &-button {
+    width: 50px;
+    height: 30px;
+    margin-left: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: transparent;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover {
+      border: 1px solid rgba(0, 0, 0, 0.5);
+      cursor: pointer;
+    }
+  }
+}
+
+.subTotalCart {
+  margin-top: 24px;
+  background-color: rgb(245, 245, 245);
+  padding: 24px;
+  &-row {
+    display: flex;
+    justify-content: space-between;
+
+    p {
+      margin-bottom: 0;
+      font-family: 'Asap', sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      color: #111111;
+      line-height: 24px;
+    }
+  }
+  &-note {
+    font-family: 'Asap', sans-serif;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 300;
+    margin-bottom: 0;
+  }
+
+  &-icon {
+    margin-left: 10px;
+  }
+
+  &-shopping {
+    transition: all 0.5s ease;
+    &:hover {
+      .subTotalCart-icon {
+        margin-left: 0px;
+      }
+    }
+  }
+}

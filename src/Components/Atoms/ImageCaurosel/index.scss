@@ -1,0 +1,47 @@
+.imageCaurosel {
+  padding-top: 12px;
+
+  .slick-active {
+    display: flex !important;
+    justify-content: center;
+    background-color: #f9f9f9;
+  }
+
+  &-mainImage {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+  &-caurosel {
+    padding-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &-button-image {
+    width: 100px;
+    cursor: pointer;
+    &-active {
+      border: 1px solid #1890ff;
+    }
+  }
+}
+
+.images-thumbnail {
+  max-width: 531px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  flex-wrap: nowrap;
+  margin: 0 !important;
+}
+
+.slick-list {
+  // height: 531px;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 576px) {
+  .imageCaurosel {
+    padding: 12px 10px;
+  }
+}

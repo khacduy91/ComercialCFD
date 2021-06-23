@@ -1,0 +1,11 @@
+.productList {
+  background-color: white;
+  padding: 0 10px;
+
+  &-pagination {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+  }
+}

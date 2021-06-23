@@ -1,0 +1,168 @@
+.countdownCard {
+  background-color: white;
+  padding: 50px 40px 60px 40px;
+  position: relative;
+  //   overflow: visible;
+
+  &-Ribbon {
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    z-index: 1;
+    overflow: hidden;
+    width: 75px;
+    height: 75px;
+    text-align: right;
+    strong {
+      font-weight: 600;
+      font-size: 14px;
+      color: #fff;
+      text-transform: uppercase;
+      text-align: center;
+      line-height: 20px;
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      width: 100px;
+      display: block;
+      background: #ed1b24;
+      position: absolute;
+      top: 19px;
+      right: -21px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0px;
+        top: 100%;
+        z-index: -1;
+        border-left: 3px solid #cc1018;
+        border-right: 3px solid transparent;
+        border-bottom: 3px solid transparent;
+        border-top: 3px solid #cc1018;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 100%;
+        z-index: -1;
+        border-left: 3px solid transparent;
+        border-right: 3px solid #cc1018;
+        border-bottom: 3px solid transparent;
+        border-top: 3px solid #cc1018;
+      }
+    }
+  }
+
+  &-Name {
+    font-size: 26px;
+    font-weight: 500;
+    font-family: 'Asap', sans-serif;
+    color: #232323;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+  }
+
+  &-Price {
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 30px;
+    font-family: 'Asap', sans-serif;
+    color: #232323;
+    opacity: 0.6;
+    text-decoration: line-through;
+    padding-right: 10px;
+  }
+
+  &-PromoPrice {
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 30px;
+    font-family: 'Asap', sans-serif;
+    color: #232323;
+    // opacity: 0.6;
+    // text-decoration: line-through;
+  }
+
+  &-Description {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    font-family: 'Asap', sans-serif;
+    color: #888888;
+    padding-bottom: 16px;
+    padding-top: 16px;
+  }
+
+  &-Button {
+    color: #1890ff;
+    border: 1px solid #1890ff;
+    border-radius: 1px;
+    font-family: 'Asap', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    margin-bottom: 10px;
+
+    &:hover {
+      color: white;
+      background-color: #1890ff;
+    }
+  }
+
+  &-Countdown {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    transform: translateY(50%);
+
+    &-Col {
+      padding: 0;
+    }
+    &-div {
+      display: flex;
+      flex-direction: column;
+      border: 5px solid #f6f6f6;
+      background: white;
+      border-top-width: 10px;
+
+      span {
+        font-size: 38px;
+        font-family: 'Asap', sans-serif;
+        font-weight: 700;
+        text-align: center;
+      }
+      p {
+        font-size: 10px;
+        font-weight: 500;
+        font-family: 'Asap', sans-serif;
+        line-height: 10px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .countdownCard {
+    &-Countdown {
+      &-div {
+        span {
+          font-size: 30px;
+        }
+        p {
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .countdownCard {
+    display: flex;
+    flex-direction: column;
+  }
+}

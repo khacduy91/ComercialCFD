@@ -1,0 +1,29 @@
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  &-label {
+    font-size: 14px;
+    font-family: "Asap", sans-serif;
+    color: #222222;
+  }
+  &-input {
+    border: 0.5px solid #00000030;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-family: "Asap", sans-serif;
+    padding: 10px;
+    width: 100%;
+    outline: none;
+  }
+
+  &-error {
+    margin-bottom: 0;
+    color: red;
+    font-size: 12px;
+    font-family: "Asap", sans-serif;
+    position: absolute;
+    bottom: 6px;
+  }
+}

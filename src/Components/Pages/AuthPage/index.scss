@@ -1,0 +1,76 @@
+.auth {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto !important;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  p {
+    font-size: 20px;
+    font-family: "Asap", sans-serif;
+    font-weight: 300;
+  }
+
+  &-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    input {
+      height: 51px;
+      border: 0.5px solid #00000030;
+      margin-bottom: 20px;
+      padding: 10px;
+      width: 100%;
+      outline: none;
+    }
+    &-btnSubmit {
+      background-color: #030303;
+      color: white;
+      font-family: "Asap", sans-serif;
+
+      &:hover {
+        background-color: white;
+        color: black;
+        border-color: black;
+      }
+    }
+  }
+}
+
+.register {
+  display: flex;
+  flex-direction: column;
+  &-title {
+    font-size: 20px;
+    font-family: "Asap", sans-serif;
+    font-weight: 300;
+  }
+
+  &-row {
+    display: flex;
+    flex-direction: column;
+
+    input {
+      height: 51px;
+      border: 0.5px solid #00000030;
+      margin-bottom: 20px;
+      padding: 10px;
+      width: 100%;
+      outline: none;
+    }
+  }
+
+  &-label {
+    font-size: 18px;
+    font-family: "Asap", sans-serif;
+    color: #222222;
+  }
+
+  &-confirm {
+    font-size: 15px;
+    font-family: "Asap", sans-serif;
+  }
+}

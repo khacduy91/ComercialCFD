@@ -1,0 +1,44 @@
+.serviceCard {
+  & > div {
+    padding: 20px 12px;
+  }
+  &-Meta {
+    display: flex;
+    align-items: center;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
+  .ant-card-meta-title {
+    margin-bottom: 0;
+  }
+
+  &-Title {
+    font-weight: 600;
+    font-size: 16;
+    font-family: 'Asap', sans-serif;
+    color: #111111;
+    line-height: 16px;
+    // padding-bottom: 5px;
+  }
+
+  &-Description {
+    display: block;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    min-height: 36px;
+    font-family: 'Asap', sans-serif;
+    color: #888888;
+  }
+
+  &:hover {
+    border: 1px solid #1890ff;
+
+    .serviceCard-Avatar {
+      color: #1890ff;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.headerContent {
+  width: 80%;
+}
+
+@media screen and (max-width: 992px) {
+  .HeaderContent {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .HeaderContent {
+    width: 100%;
+    padding: 0px 10px;
+  }
+}

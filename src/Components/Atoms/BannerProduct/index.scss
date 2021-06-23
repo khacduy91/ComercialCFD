@@ -1,0 +1,108 @@
+.bannerProduct {
+  background-size: cover;
+  display: flex;
+
+  &-darktheme {
+    & > a {
+      color: white;
+    }
+
+    & > p {
+      color: white;
+    }
+    &-Button {
+      border-color: white;
+      span {
+        color: white;
+      }
+    }
+  }
+
+  & > div {
+    padding: 5%;
+
+    & > div {
+      padding: 5%;
+      border: 5px solid wheat;
+      display: block;
+
+      a {
+        font-size: 50px;
+        font-weight: 700;
+        font-family: 'Asap', sans-serif;
+        color: black;
+        padding-bottom: 5px;
+        line-height: 1;
+        background-color: transparent;
+      }
+
+      p {
+        color: black;
+        font-size: 25px;
+        font-family: 'Asap', sans-serif;
+        font-weight: 300;
+        margin-bottom: 0;
+        line-height: 1;
+        margin-bottom: 10px;
+      }
+
+      .bannerProduct-darktheme {
+        color: white;
+      }
+    }
+  }
+
+  &-Button {
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 1px;
+
+    span {
+      font-size: 16px;
+      font-weight: 500;
+      font-family: 'Asap', sans-serif;
+      color: black;
+    }
+
+    &:hover {
+      border-color: black;
+      background-color: #1890ff;
+
+      span {
+        color: white;
+      }
+    }
+
+    &-darktheme {
+      border: 1px solid white;
+      span {
+        color: white;
+      }
+
+      &:hover {
+        border-color: white;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .bannerProduct {
+    & > div {
+      & > div {
+        a {
+          font-size: 40px;
+        }
+
+        p {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  &-Button {
+    span {
+      font-size: 11px;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.topRateProductList {
+  width: 100%;
+}
+
+@media screen and (max-width: 991px) {
+  .topRateProductList {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .topRateProductList {
+    display: none;
+  }
+}
+@media screen and (max-width: 576px) {
+  .topRateProductList {
+    display: none;
+  }
+}

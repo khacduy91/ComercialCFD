@@ -1,0 +1,95 @@
+.detailProduct {
+  padding-top: 12px;
+  padding-left: 16px;
+
+  &-title {
+    font-family: "Asap", sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1em;
+  }
+
+  &-price {
+    font-family: "Asap", sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0;
+    color: rgb(24, 144, 255);
+  }
+
+  &-detail {
+    font-family: "Asap", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #888888;
+  }
+
+  &-input {
+    border: 1px solid #00000030;
+    font-family: "Asap", sans-serif;
+    border-radius: 1px;
+    padding: 2px;
+    height: 45px;
+    width: auto;
+    color: black;
+    font-size: 18px;
+    background: transparent;
+    margin-right: 20px;
+    text-align: center;
+    width: 75px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &-AddToCart {
+    background: black;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: "Asap", sans-serif;
+    text-transform: uppercase;
+    border: 1px solid black;
+    border-radius: 1px;
+    padding: 9px 15px;
+    outline: none;
+    transition: all 0.2s ease;
+    cursor: pointer;
+
+    &:hover {
+      background: #1890ff;
+      border-color: #1890ff;
+    }
+  }
+
+  &-Divider {
+    margin: 14px 0;
+  }
+
+  &-Category {
+    font-family: "Asap", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 14px;
+    color: #888888;
+
+    span {
+      color: #1890ff;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .detailProduct {
+    padding: 12px 10px;
+
+    &-title {
+      font-size: 20px;
+    }
+    &-price {
+      font-size: 20px;
+    }
+  }
+}

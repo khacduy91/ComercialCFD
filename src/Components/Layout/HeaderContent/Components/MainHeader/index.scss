@@ -1,0 +1,57 @@
+.mainHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 38px;
+
+  &-button {
+    padding-right: 2em;
+    padding-bottom: 1em;
+    font-size: 1em;
+    font-weight: 400;
+    font-family: "Asap", sans-serif;
+    color: rgba(0, 0, 0, 0.85);
+
+    // &:link {
+    //   color: #757575;
+    // }
+  }
+
+  #logo {
+    display: inline;
+    line-height: 0;
+    height: 100%;
+    width: 368.25px;
+    padding: 0;
+    padding-bottom: 10px;
+    margin-right: 22px;
+    /* margin-bottom: -33px; */
+
+    img {
+      display: inline;
+      // margin-top: -1em;
+      width: 100%;
+      max-width: 60%;
+      min-width: 145px;
+      // z-index: 20;
+    }
+  }
+
+  #tooltip {
+    border: none;
+    box-shadow: none;
+    margin-top: -5px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .mainHeader {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mainHeader {
+    display: none;
+  }
+}

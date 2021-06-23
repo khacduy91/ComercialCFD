@@ -1,0 +1,47 @@
+.headerContact {
+  display: flex;
+  align-items: center;
+  padding-bottom: 9.75px;
+
+  &-a {
+    font-size: 15.6px;
+    color: #757575;
+    font-weight: 600;
+    font-family: "Asap", sans-serif;
+    margin-right: 13px;
+  }
+
+  &-span {
+    color: gray;
+    font-size: 11.7px;
+    font-family: "Asap", sans-serif;
+    margin-right: "5px";
+    font-weight: 300;
+  }
+}
+@media screen and (max-width: 992px) {
+  .headerContact {
+    &-a {
+      font-size: 12px;
+    }
+    &-span {
+      font-size: 14px;
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .headerContact {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 5px;
+
+    &-a {
+      font-size: 11px;
+    }
+
+    &-span {
+      font-size: 11px;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.horizonProductCard {
+  &-image {
+    width: 100%;
+  }
+  &-title,
+  &-price {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    font-family: 'Asap', sans-serif;
+    color: #232323;
+    transition: all 0.2 ease;
+    margin: 0;
+  }
+
+  &-divider {
+    margin: 8px 0;
+  }
+}

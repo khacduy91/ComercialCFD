@@ -1,0 +1,41 @@
+.categoryLink {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  font-family: 'Asap', sans-serif;
+  color: #888888;
+  transition: all 0.2 ease;
+
+  .beforeLink {
+    svg {
+      width: 0px;
+      font-weight: 700;
+      //   height: 10px;
+      -webkit-transition: all 0.2s ease;
+      -moz-transition: all 0.2s ease;
+      -ms-transition: all 0.2s ease;
+      -o-transition: all 0.2s ease;
+      transition: all 0.2s ease-out;
+    }
+  }
+
+  &:hover {
+    .beforeLink {
+      svg {
+        width: 15px;
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+.currentLink {
+  color: #1890ff;
+  .beforeLink {
+    color: #1890ff;
+    svg {
+      width: 15px;
+      margin-right: 5px;
+    }
+  }
+}

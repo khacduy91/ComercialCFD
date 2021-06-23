@@ -1,0 +1,94 @@
+.checkout {
+  width: 80%;
+  max-width: 1140px;
+  margin: 0 auto !important;
+  margin-top: 40px !important;
+
+  &-title {
+    font-size: 16px;
+    font-family: "Asap", sans-serif;
+    font-weight: 500;
+    margin-bottom: 0;
+    padding: 16px;
+    border: none;
+    background: whitesmoke;
+    margin-bottom: 20px !important;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-input-group {
+    display: flex;
+    flex-direction: column;
+
+    label {
+      font-size: 14px;
+      font-family: "Asap", sans-serif;
+      color: #222222;
+    }
+
+    &-input {
+      border: 0.5px solid #00000030;
+      margin-bottom: 20px;
+      font-size: 14px;
+      font-family: "Asap", sans-serif;
+      padding: 10px;
+      width: 100%;
+      outline: none;
+    }
+  }
+
+  &-ship {
+    font-size: 14px;
+    font-family: "Asap", sans-serif;
+    color: #222222;
+    margin-bottom: 20px !important;
+
+    .ant-table-title {
+      font-size: 16px;
+      background: whitesmoke;
+      font-weight: 500;
+    }
+    thead {
+      display: none;
+    }
+  }
+
+  &-subtotal {
+    margin-bottom: 20px !important;
+  }
+
+  &-submit {
+    background: black;
+    border: none;
+    outline: none;
+    font-family: "Asap", sans-serif;
+    transition: all 0.5s ease;
+
+    &:hover,
+    &:focus {
+      background: white;
+      color: black;
+      border: 0.5px solid #00000030;
+    }
+  }
+
+  &-expire {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Asap", sans-serif;
+    select {
+      margin: 6px 6px 26px 6px;
+      outline: none;
+      border: 0.5px solid #00000030;
+      padding: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 518px) {
+  .checkout {
+    width: 95%;
+    margin-top: 20px !important;
+  }
+}
