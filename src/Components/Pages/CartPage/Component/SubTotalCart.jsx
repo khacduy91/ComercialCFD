@@ -27,11 +27,11 @@ export default function SubTotalCart() {
 
   let cart = useSelector((state) => state.cart);
 
-
   function changeLocate(location) {
-    location.pathname = '/shop/category/dien-thoai-may-tinh-bang-id1789'
+    location.pathname = "/shop/category/dien-thoai-may-tinh-bang-id1789";
   }
 
+  const isLogged = useSelector((state) => state.auth.isLogged);
 
   return (
     <>
@@ -43,7 +43,9 @@ export default function SubTotalCart() {
         <Divider dashed="false" style={styleDivider} />
         <div className="subTotalCart-row">
           <p className="subTotalCart-label">Tax (10% VAT)</p>
-          <p className="subTotalCart-price">{cart?.amount * 0.1.toLocaleString()}</p>
+          <p className="subTotalCart-price">
+            {cart?.amount * (0.1).toLocaleString()}
+          </p>
         </div>
         <Divider dashed="false" style={styleDivider} />
         <div className="subTotalCart-row">
@@ -61,18 +63,18 @@ export default function SubTotalCart() {
       </Container>
       <Link to="/check-out">
         <Button type="primary" block size="large" style={styleCheckout}>
-          Proceed to Checkout
-      </Button>
+          {isLogged ? "Continue to Checkout" : "Login for Checkout"}
+        </Button>
       </Link>
 
-
       <Button type="link" style={styleContinueShopping}>
-        <Link to={location => changeLocate(location)} className="subTotalCart-shopping">
+        <Link
+          to={(location) => changeLocate(location)}
+          className="subTotalCart-shopping"
+        >
           <CaretLeftOutlined className="subTotalCart-icon" /> Continue Shopping
         </Link>
       </Button>
     </>
   );
 }
-
-

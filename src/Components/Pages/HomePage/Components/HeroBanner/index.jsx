@@ -19,7 +19,7 @@ class HeroBanner extends React.Component {
         <Carousel {...setting}>
           <Banner
             number="1"
-            imageUrl="/Image/HomeBanner/trucash-page-banner-background-1-1024x433.png"
+            imageUrl="./Image/HomeBanner/trucash-page-banner-background-1-1024x433.png"
             title="New Arrrivals"
             description="Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
             cta="Discover Now"
@@ -30,7 +30,7 @@ class HeroBanner extends React.Component {
 
           <Banner
             number="2"
-            imageUrl="Image/HomeBanner/banner2.jpg"
+            imageUrl="./Image/HomeBanner/banner2.jpg"
             title="LADIES"
             description="Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
             cta="Buy Now"
@@ -40,7 +40,7 @@ class HeroBanner extends React.Component {
 
           <Banner
             number="3"
-            imageUrl="Image/HomeBanner/banner1.jpg"
+            imageUrl="./Image/HomeBanner/banner1.jpg"
             title="SPORT"
             description="Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
             cta="Shop Now"
