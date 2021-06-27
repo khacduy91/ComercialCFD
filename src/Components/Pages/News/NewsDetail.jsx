@@ -1,12 +1,17 @@
 import { Col, Row } from "antd";
 import React from "react";
+import { imgUrl } from "../../../api/config";
 import InputGroup from "../../Atoms/InputGroup";
 
 export default function NewsDetail() {
   return (
     <Col className="news-col left">
       <div className="news-header">
-        <img src="/Image/News/news1.jpg" alt="" className="news-header-image" />
+        <img
+          src={`${imgUrl}Image/News/News1.jpg`}
+          alt=""
+          className="news-header-image"
+        />
         <div className="news-header-title">
           <h2>An Inside Look at Paris Fashion Week</h2>
           <p>

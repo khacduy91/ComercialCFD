@@ -4,6 +4,7 @@ import { CaretDownOutlined, SearchOutlined } from "@ant-design/icons";
 import "./index.scss";
 import SubMenu from "antd/lib/menu/SubMenu";
 import { Link } from "react-router-dom";
+import { imgUrl } from "../../../../../api/config";
 
 class MainHeader extends React.Component {
   //state
@@ -67,7 +68,7 @@ class MainHeader extends React.Component {
         <Button type="link" id="logo">
           <Link to="/">
             <img
-              src="/Image/4375057785_952d0b97-7f3e-419b-8ed4-4c8e62fac080.png"
+              src={`${imgUrl}Image/4375057785_952d0b97-7f3e-419b-8ed4-4c8e62fac080.png`}
               alt="logo"
             />
           </Link>

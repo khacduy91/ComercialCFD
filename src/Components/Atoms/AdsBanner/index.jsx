@@ -2,6 +2,7 @@ import React from "react";
 import "./index.scss";
 import Container from "../Container";
 import { Button, Col, Row } from "antd";
+import { imgUrl } from "../../../api/config";
 
 class AdsBanner extends React.Component {
   render() {
@@ -9,7 +10,7 @@ class AdsBanner extends React.Component {
       <Container
         width="90%"
         height="100%"
-        imageUrl="./Image/HomeBanner/AdsBanner1.jpg"
+        imageUrl={`${imgUrl}Image/HomeBanner/AdsBanner1.jpg`}
         className="adsBanner"
       >
         <Row>

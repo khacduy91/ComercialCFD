@@ -7,6 +7,7 @@ import LinkCategory from "../../Atoms/LinkCategory";
 import { useSelector } from "react-redux";
 import { ShoppingOutlined } from "@ant-design/icons";
 import { Link, useLocation, useRouteMatch } from "react-router-dom";
+import { imgUrl } from "../../../api/config";
 
 export default function FooterContent({ modalCartRef }) {
   let num = useSelector((state) => state.cart.num);
@@ -81,7 +82,7 @@ export default function FooterContent({ modalCartRef }) {
               xs={{ span: 24 }}
             >
               <img
-                src="/Image/4375057785_952d0b97-7f3e-419b-8ed4-4c8e62fac080.png"
+                src={`${imgUrl}Image/4375057785_952d0b97-7f3e-419b-8ed4-4c8e62fac080.png`}
                 alt="logo"
                 className="footerContent-logo"
               />
@@ -159,21 +160,21 @@ export default function FooterContent({ modalCartRef }) {
                 <Row gutter={[12, 12]} align="middle">
                   <Col span="6">
                     <img
-                      src="/Image/Payment/20201011055543!MoMo_Logo.png"
+                      src={`${imgUrl}Image/Payment/20201011055543!MoMo_Logo.png`}
                       alt=""
                       style={{ width: "100%" }}
                     />
                   </Col>
                   <Col span="6">
                     <img
-                      src="/Image/Payment/1280px-Mastercard-logo.svg.png"
+                      src={`${imgUrl}Image/Payment/1280px-Mastercard-logo.svg.png`}
                       alt=""
                       style={{ width: "100%" }}
                     />
                   </Col>
                   <Col span="6">
                     <img
-                      src="/Image/Payment/ACB_Logo.png"
+                      src={`${imgUrl}Image/Payment/ACB_Logo.png`}
                       alt=""
                       style={{ width: "100%" }}
                     />

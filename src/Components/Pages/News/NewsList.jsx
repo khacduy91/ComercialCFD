@@ -1,13 +1,20 @@
 import { Col } from "antd";
 import React from "react";
 import { Link } from "react-router-dom";
+import { imgUrl } from "../../../api/config";
 import "./index.scss";
 
 export default function NewsList() {
   return (
     <Col className="news-col left">
       <div className="news-header">
-        <img src="/Image/News/news1.jpg" alt="" className="news-header-image" />
+        <Link to="/news/title">
+          <img
+            src={`${imgUrl}Image/News/News1.jpg`}
+            alt=""
+            className="news-header-image"
+          />
+        </Link>
         <div className="news-header-title">
           <Link to="/news/title">
             <h2>An Inside Look at Paris Fashion Week</h2>
@@ -26,7 +33,13 @@ export default function NewsList() {
       </div>
 
       <div className="news-header">
-        <img src="/Image/News/news1.jpg" alt="" className="news-header-image" />
+        <Link to="/news/title">
+          <img
+            src={`${imgUrl}Image/News/News1.jpg`}
+            alt=""
+            className="news-header-image"
+          />
+        </Link>
         <div className="news-header-title">
           <Link to="/news/title">
             <h2>An Inside Look at Paris Fashion Week</h2>
@@ -45,7 +58,13 @@ export default function NewsList() {
       </div>
 
       <div className="news-header">
-        <img src="/Image/News/news1.jpg" alt="" className="news-header-image" />
+        <Link to="/news/title">
+          <img
+            src={`${imgUrl}Image/News/News1.jpg`}
+            alt=""
+            className="news-header-image"
+          />
+        </Link>
         <div className="news-header-title">
           <Link to="/news/title">
             <h2>An Inside Look at Paris Fashion Week</h2>

@@ -6,6 +6,7 @@ import TitleSection from "../../../../Atoms/TitleSection";
 import "./index.scss";
 import BannerProduct from "../../../../Atoms/BannerProduct";
 import ProductCard from "../../../../Atoms/ProductCard";
+import { imgUrl } from "../../../../../api/config";
 
 class SectionMenWomen extends React.Component {
   render() {
@@ -28,7 +29,7 @@ class SectionMenWomen extends React.Component {
               xs={{ span: 24, order: 2 }}
             >
               <BannerProduct
-                imageUrl="./Image/ProductBanner/electricty.jpg"
+                imageUrl={`${imgUrl}Image/ProductBanner/electricty.jpg`}
                 title="Electricial"
                 description="Thiết bị điện"
                 cta="View All Products"
@@ -46,7 +47,7 @@ class SectionMenWomen extends React.Component {
               xs={{ span: 24, order: 1 }}
             >
               <BannerProduct
-                imageUrl="./Image/ProductBanner/photograph.jpg"
+                imageUrl={`${imgUrl}Image/ProductBanner/photograph.jpg`}
                 title="Photograph"
                 description="Máy ảnh"
                 cta="View All Products"
@@ -64,7 +65,7 @@ class SectionMenWomen extends React.Component {
               xs={{ span: 24, order: 3 }}
             >
               <BannerProduct
-                imageUrl="./Image/ProductBanner/book.jpg"
+                imageUrl={`${imgUrl}Image/ProductBanner/book.jpg`}
                 title="Book"
                 description="Sách"
                 cta="View All Products"
@@ -82,7 +83,7 @@ class SectionMenWomen extends React.Component {
               xs={{ span: 24, order: 4 }}
             >
               <BannerProduct
-                imageUrl="./Image/ProductBanner/mobile.jpg"
+                imageUrl={`${imgUrl}Image/ProductBanner/mobile.jpg`}
                 title="Mobile"
                 description="Điện thoại"
                 cta="View All Products"

@@ -50,8 +50,16 @@ export default function News() {
 
         <div className="news-categories">
           <h4 className="title">CATEGORIES</h4>
-          <LinkCategory to="/" title="Fashion" className="link" />
-          <LinkCategory to="/" title="Interior" className="link" />
+          <LinkCategory
+            to="do-choi-me-be-id2549"
+            title="Fashion"
+            className="link"
+          />
+          <LinkCategory
+            to="hang-tieu-dung-thuc-pham-id4384"
+            title="Interior"
+            className="link"
+          />
         </div>
 
         <div className="news-recentcomment">

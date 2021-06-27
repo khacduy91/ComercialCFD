@@ -4,6 +4,7 @@ import Container from "../../../../Atoms/Container";
 import TitleSection from "../../../../Atoms/TitleSection";
 import { Col, Row } from "antd";
 import NewsCard from "../../../../Atoms/NewsCard";
+import { imgUrl } from "../../../../../api/config";
 class LatestNews extends React.Component {
   render() {
     return (
@@ -22,7 +23,7 @@ class LatestNews extends React.Component {
               sm={{ span: 24 }}
             >
               <NewsCard
-                imageUrl="./Image/News/News1.jpg"
+                imageUrl={`${imgUrl}Image/News/News1.jpg`}
                 imageAlt="Post1"
                 headline="An Inside Look at Paris Fashion Week"
                 author="DODGERFAN"
@@ -37,7 +38,7 @@ class LatestNews extends React.Component {
               sm={{ span: 24 }}
             >
               <NewsCard
-                imageUrl="./Image/News/News1.jpg"
+                imageUrl={`${imgUrl}Image/News/News1.jpg`}
                 imageAlt="Post1"
                 headline="An Inside Look at Paris Fashion Week"
                 author="DODGERFAN"
@@ -52,7 +53,7 @@ class LatestNews extends React.Component {
               sm={{ span: 24 }}
             >
               <NewsCard
-                imageUrl="./Image/News/News1.jpg"
+                imageUrl={`${imgUrl}Image/News/News1.jpg`}
                 imageAlt="Post1"
                 headline="An Inside Look at Paris Fashion Week"
                 author="DODGERFAN"
