@@ -5,7 +5,7 @@ import { Link, useRouteMatch } from "react-router-dom";
 import "./index.scss";
 
 export default function LinkCategory(props) {
-  const { to, title, divider = false, id } = props;
+  const { to, title, divider = false, id, className } = props;
 
   let routerMatchID = parseInt(
     useRouteMatch().params.slug?.split("-").pop().replace("id", ""),
@@ -20,7 +20,9 @@ export default function LinkCategory(props) {
     <>
       <Link
         to={(location) => changlocate(location)}
-        className={`categoryLink ${routerMatchID === id ? "currentLink" : ""}`}
+        className={`categoryLink ${
+          routerMatchID === id ? "currentLink" : ""
+        }  ${className}`}
       >
         <CaretRightFilled className="beforeLink" />
         {title}

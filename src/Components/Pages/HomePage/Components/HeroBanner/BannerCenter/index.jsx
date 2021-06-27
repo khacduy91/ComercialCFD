@@ -5,9 +5,8 @@ import { Link } from "react-router-dom";
 import "./index.scss";
 
 class BannerCenter extends React.Component {
-
   render() {
-    const { imageUrl, title, description, cta, darktheme } = this.props;
+    const { imageUrl, title, description, cta, darktheme, link } = this.props;
     // style Banner
     const bannerStyle = {
       backgroundImage: `url(${imageUrl})`,
@@ -42,7 +41,7 @@ class BannerCenter extends React.Component {
             className="banner-Row-CTA"
             style={darktheme && buttonStyle}
           >
-            {cta}
+            <Link to={link}>{cta}</Link>
           </Button>
         </Col>
       </Row>

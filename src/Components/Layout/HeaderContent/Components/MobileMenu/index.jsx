@@ -3,40 +3,24 @@ import SubMenu from "antd/lib/menu/SubMenu";
 import React from "react";
 import { Link } from "react-router-dom";
 import Container from "../../../../Atoms/Container";
-import { MenuOutlined, ShoppingOutlined } from "@ant-design/icons";
+import { MenuOutlined } from "@ant-design/icons";
 import "./index.scss";
-import { useSelector } from "react-redux";
-import ButtonGroup from "antd/lib/button/button-group";
 
 export default function MobileMenu() {
-  function _Menu(x, y) {
-    const background = document.getElementById("mobileMenu-container");
-    const menu = document.querySelector(".mobileMenu-container");
-    background.style.transform = `scale(${x})`;
-    menu.style.opacity = y;
+  function _Menu(x, y, z) {
     if (document.body.classList.contains("modal-open")) {
-      console.log(document.body.classList.contains("modal-open"));
       document.body.classList.remove("modal-open");
     } else {
       document.body.classList.add("modal-open");
     }
+    const background = document.getElementById("mobileMenu-container");
+    const menu = document.querySelector(".mobileMenu-container");
+    const close = document.querySelector(".mobileMenu-container-close");
+    background.style.transform = `scale(${x})`;
+    menu.style.right = y;
+    close.style.right = z;
+    close.style.top = z;
   }
-
-  let num = useSelector((state) => state.cart.num);
-
-  window.addEventListener("scroll", function scroll(params) {
-    let body = document.body.getBoundingClientRect();
-    let mobileMenuFooter = document
-      .querySelector(".mobileMenu-footer")
-      .getBoundingClientRect();
-    let footerContent = document
-      .querySelector(".footerContent")
-      .getBoundingClientRect();
-
-    if (body.top - footerContent.top === mobileMenuFooter.top) {
-      console.log(body.top, footerContent.top, mobileMenuFooter.top);
-    }
-  });
 
   return (
     <Container className="mobileMenu">
@@ -58,65 +42,64 @@ export default function MobileMenu() {
           className="MobileMenu-Col"
           align="right"
         >
-          <MenuOutlined id="mobileMenu" onClick={() => _Menu(100, 1)} />
+          <MenuOutlined
+            id="mobileMenu"
+            onClick={() => _Menu(400, "0px", "20px")}
+          />
           <div id="mobileMenu-container"></div>
           <div className="mobileMenu-container">
-            <button
-              onClick={() => _Menu(0, 0)}
+            <Button
+              onClick={() => _Menu(0, "-100%", "-100%")}
               className="mobileMenu-container-close"
+              size="middle"
             >
               x
-            </button>
+            </Button>
             <ul>
               <div className="line"></div>
               <li className="mobileMenu-container-item">
-                <Link to="/" onClick={() => _Menu(0, 0)}>
+                <Link to="/" onClick={() => _Menu(0, "-100%", "-100%")}>
                   HOME
                 </Link>
               </li>
               <li className="mobileMenu-container-item">
                 <Link
                   to="/shop/category/dien-thoai-may-tinh-bang-id1789"
-                  onClick={() => _Menu(0, 0)}
+                  onClick={() => _Menu(0, "-100%", "-100%")}
                 >
                   SHOP
                 </Link>
               </li>
               <li className="mobileMenu-container-item">
-                <Link onClick={() => _Menu(0, 0)}>ABOUT</Link>
+                <a
+                  href="https://khacduy91.github.io/DuyVuCV/"
+                  onClick={() => _Menu(0, "-100%", "-100%")}
+                  target="_blank"
+                >
+                  ABOUT
+                </a>
+              </li>
+
+              <li className="mobileMenu-container-item">
+                <Link to="/news" onClick={() => _Menu(0, "-100%", "-100%")}>
+                  NEWS
+                </Link>
               </li>
               <li className="mobileMenu-container-item">
-                <Link onClick={() => _Menu(0, 0)}>NEWS</Link>
-              </li>
-              <li className="mobileMenu-container-item">
-                <Link to="/cart" onClick={() => _Menu(0, 0)}>
+                <Link to="/cart" onClick={() => _Menu(0, "-100%", "-100%")}>
                   CART
                 </Link>
               </li>
               <li className="mobileMenu-container-item">
-                <Link to="/my-account" onClick={() => _Menu(0, 0)}>
+                <Link
+                  to="/my-account"
+                  onClick={() => _Menu(0, "-100%", "-100%")}
+                >
                   MY-ACCOUNT
                 </Link>
               </li>
             </ul>
           </div>
-        </Col>
-      </Row>
-      <Row className="mobileMenu-footer">
-        <Col xs={{ span: 4 }} className="mobileMenu-footer-Col">
-          <Badge count={num} size="small" offset={[-3, 3]} overflowCount={9}>
-            <ShoppingOutlined className="mobileMenu-footer-icon" />
-          </Badge>
-        </Col>
-        <Col xs={{ span: 10 }} className="mobileMenu-footer-Col">
-          <Button type="primary" className="mobileMenu-footer-Col-Button">
-            Xem Gio Hang
-          </Button>
-        </Col>
-        <Col xs={{ span: 10 }} className="mobileMenu-footer-Col">
-          <Button type="primary" className="mobileMenu-footer-Col-Button">
-            Check out
-          </Button>
         </Col>
       </Row>
     </Container>

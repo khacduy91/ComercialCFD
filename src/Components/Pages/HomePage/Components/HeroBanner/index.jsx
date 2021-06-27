@@ -19,33 +19,33 @@ class HeroBanner extends React.Component {
         <Carousel {...setting}>
           <Banner
             number="1"
-            imageUrl="Image/HomeBanner/banner3.jpg"
+            imageUrl="/Image/HomeBanner/trucash-page-banner-background-1-1024x433.png"
             title="New Arrrivals"
             description="Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
             cta="Discover Now"
             isBannerCenter="true"
+            link="/shop/category/laptop-thiet-bi-it-id1846"
+            darktheme
           ></Banner>
 
           <Banner
             number="2"
             imageUrl="Image/HomeBanner/banner2.jpg"
-            altProduct="Banner 2"
-            productImage_lg="https://diviecommerce.aspengrovestudio.com/wp-content/uploads/2017/11/today_deal-8.png"
-            productImage_md="https://diviecommerce.aspengrovestudio.com/wp-content/uploads/2017/11/today_deal-8-510x448.png"
-            productImage_sm="https://diviecommerce.aspengrovestudio.com/wp-content/uploads/2017/11/today_deal-8-300x263.png"
-            title="LADIES BAG"
+            title="LADIES"
             description="Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
             cta="Buy Now"
+            link="/shop/category/lam-dep-suc-khoe-id1520"
+            darktheme
           ></Banner>
 
           <Banner
             number="3"
             imageUrl="Image/HomeBanner/banner1.jpg"
-            title="t-shirt sale"
+            title="SPORT"
             description="Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
             cta="Shop Now"
             darktheme
-            reflect
+            link="/shop/category/the-thao-da-ngoai-id1975"
           ></Banner>
         </Carousel>
       </Container>

@@ -13,7 +13,7 @@ class SectionMenWomen extends React.Component {
       <Container width="100%" className="sectionMenWomen" maxWidth="1140px">
         {/* Title  */}
         <TitleSection
-          title="Men & Women"
+          title="Categories"
           description="Lorem ipsum dolor sit amet"
           align="left"
         />
@@ -27,31 +27,15 @@ class SectionMenWomen extends React.Component {
               sm={{ span: 24, order: 2 }}
               xs={{ span: 24, order: 2 }}
             >
-              <Row gutter="24">
-                {/* Product Card */}
-                <ProductCard
-                  productName="Red Polo Shirt"
-                  productPrice="120"
-                  imageUrl="Image/Product/RedPoloShirt.png"
-                  xl="12"
-                  lg="12"
-                  md="12"
-                  sm="12"
-                  xs="12"
-                />
-
-                {/* Product Card */}
-                <ProductCard
-                  productName="Leather Oxford Shoes"
-                  productPrice="190"
-                  imageUrl="/Image/Product/Leather oxford shoes.png"
-                  xl="12"
-                  lg="12"
-                  md="12"
-                  sm="12"
-                  xs="12"
-                />
-              </Row>
+              <BannerProduct
+                imageUrl="./Image/ProductBanner/electricty.jpg"
+                title="Electricial"
+                description="Thiết bị điện"
+                cta="View All Products"
+                className="sectionMenWomen-BannerProduct"
+                gutter="12"
+                link="/shop/category/dien-gia-dung-id1882"
+              />
             </Col>
 
             {/* Right Col  */}
@@ -62,12 +46,13 @@ class SectionMenWomen extends React.Component {
               xs={{ span: 24, order: 1 }}
             >
               <BannerProduct
-                imageUrl="./Image/ProductBanner/MenProduct.jpg"
-                title="MEN'S"
-                description="PRODUCTS"
+                imageUrl="./Image/ProductBanner/photograph.jpg"
+                title="Photograph"
+                description="Máy ảnh"
                 cta="View All Products"
                 className="sectionMenWomen-BannerProduct"
                 gutter="12"
+                link="/shop/category/may-anh-quay-phim-id1801"
                 darkTheme
               />
             </Col>
@@ -79,12 +64,14 @@ class SectionMenWomen extends React.Component {
               xs={{ span: 24, order: 3 }}
             >
               <BannerProduct
-                imageUrl="./Image/ProductBanner/WoMenProduct.jpg"
-                title="WOMEN'S"
-                description="PRODUCTS"
+                imageUrl="./Image/ProductBanner/book.jpg"
+                title="Book"
+                description="Sách"
                 cta="View All Products"
                 className="sectionMenWomen-BannerProduct"
                 gutter="12"
+                link="/shop/category/sach-vpp-qua-tang-id8322"
+                darkTheme
               />
             </Col>
 
@@ -94,28 +81,15 @@ class SectionMenWomen extends React.Component {
               sm={{ span: 24, order: 4 }}
               xs={{ span: 24, order: 4 }}
             >
-              <Row gutter="24">
-                <ProductCard
-                  productName="Leather Oxford Shoes"
-                  productPrice="190"
-                  imageUrl="/Image/Product/Leather oxford shoes.png"
-                  xl="12"
-                  lg="12"
-                  md="12"
-                  sm="12"
-                  xs="12"
-                />
-                <ProductCard
-                  productName="Leather Oxford Shoes"
-                  productPrice="190"
-                  imageUrl="/Image/Product/Leather oxford shoes.png"
-                  xl="12"
-                  lg="12"
-                  md="12"
-                  sm="12"
-                  xs="12"
-                />
-              </Row>
+              <BannerProduct
+                imageUrl="./Image/ProductBanner/mobile.jpg"
+                title="Mobile"
+                description="Điện thoại"
+                cta="View All Products"
+                className="sectionMenWomen-BannerProduct"
+                link="/shop/category/dien-thoai-may-tinh-bang-id1789"
+                gutter="12"
+              />
             </Col>
           </Row>
         </Container>

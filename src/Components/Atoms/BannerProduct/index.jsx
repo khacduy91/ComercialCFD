@@ -6,14 +6,8 @@ import "./index.scss";
 
 class BannerProduct extends React.Component {
   render() {
-    const {
-      imageUrl,
-      title,
-      description,
-      cta,
-      className,
-      darkTheme,
-    } = this.props;
+    const { imageUrl, title, description, cta, className, darkTheme, link } =
+      this.props;
     // Banner Style
 
     return (
@@ -31,12 +25,15 @@ class BannerProduct extends React.Component {
             <p className={darkTheme && "bannerProduct-darktheme"}>
               {description}
             </p>
-            <Button
-              className={`${darkTheme && "bannerProduct-Button-darktheme"
+            <Link to={link}>
+              <Button
+                className={`${
+                  darkTheme && "bannerProduct-Button-darktheme"
                 } bannerProduct-Button`}
-            >
-              {cta}
-            </Button>
+              >
+                {cta}
+              </Button>
+            </Link>
           </Container>
         </Container>
       </Container>

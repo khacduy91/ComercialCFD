@@ -1,4 +1,11 @@
-.TrendingProduct {
+.trendingProduct {
   background: white;
   padding: 4% 0;
+}
+
+@media screen and (max-width : 1140px) {
+  .trendingProduct {
+    padding-left: 10px;
+    padding-right: 10px
+  }
 }

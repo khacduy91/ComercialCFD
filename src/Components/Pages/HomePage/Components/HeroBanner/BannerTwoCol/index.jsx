@@ -16,6 +16,7 @@ class BannerTwoCol extends React.Component {
       cta,
       reflect,
       darktheme,
+      link,
     } = this.props;
 
     //Style
@@ -44,15 +45,15 @@ class BannerTwoCol extends React.Component {
         >
           {
             (productImage_lg,
-              productImage_md,
-              productImage_sm && (
-                <img
-                  srcset={`${productImage_lg} 992w, ${productImage_md} 768w, ${productImage_sm} 576w`}
-                  src={`${productImage_lg}`}
-                  alt={altProduct}
-                  className="banner-Row-Image"
-                />
-              ))
+            productImage_md,
+            productImage_sm && (
+              <img
+                srcset={`${productImage_lg} 992w, ${productImage_md} 768w, ${productImage_sm} 576w`}
+                src={`${productImage_lg}`}
+                alt={altProduct}
+                className="banner-Row-Image"
+              />
+            ))
           }
         </Col>
         <Col
@@ -81,7 +82,7 @@ class BannerTwoCol extends React.Component {
             className="banner-Row-CTA"
             style={darktheme && buttonStyle}
           >
-            {cta}
+            <Link to={link}>{cta}</Link>
           </Button>
         </Col>
       </Row>

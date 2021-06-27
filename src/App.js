@@ -16,16 +16,23 @@ import ModalCart from "../src/Components/Atoms/ModalCart";
 import CheckOut from "./Components/Pages/CheckOut";
 import Auth from "./Components/Pages/AuthPage";
 import ModalSuccessCheckOut from "./Components/Atoms/ModalSuccessCheckOut";
+import News from "./Components/Pages/News";
+import NewsList from "./Components/Pages/News/NewsList";
+import Info from "./Components/Pages/MyAccount/Info";
+
+
 
 export default function App() {
-  const StyleHeader = {
+  const styleHeader = {
     backgroundColor: "white",
     padding: "0px",
     height: "auto",
     lineHeight: 0,
   };
 
-
+  const styleFooter = {
+    padding: "0"
+  }
 
   let modalCartRef = useRef();
   let modalSuccessCheckOutRef = useRef();
@@ -33,7 +40,7 @@ export default function App() {
     <AppProvider reducers={reducers}>
       <Router>
         <Layout>
-          <Header style={StyleHeader}>
+          <Header style={styleHeader}>
             <HeaderContent modalCartRef={modalCartRef} />
           </Header>
 
@@ -45,12 +52,13 @@ export default function App() {
               <Route path="/my-account" component={MyAccount} />
               <Route exact path="/check-out" component={() => (<CheckOut modalSuccessCheckOutRef={modalSuccessCheckOutRef} />)} />
               <Route exact path="/auth" component={Auth} />
-
+              <Route  path="/news" component={News} />
+         
             </Switch>
           </Content>
 
-          <Footer >
-            <FooterContent />
+          <Footer  style={styleFooter}  >
+            <FooterContent modalCartRef={modalCartRef}/>
           </Footer>
         </Layout>
         <ModalCart ref={modalCartRef} />

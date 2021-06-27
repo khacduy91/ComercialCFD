@@ -17,6 +17,7 @@ export default function InputGroup({
   className,
   required = false,
 }) {
+  console.log(name, placeholder, type);
   return (
     <Col
       className="inputGroup"

@@ -10,15 +10,13 @@ class Banner extends React.Component {
       number,
       imageUrl,
       altProduct,
-      productImage_lg,
-      productImage_md,
-      productImage_sm,
       title,
       description,
       cta,
       reflect,
       isBannerCenter,
       darktheme,
+      link,
     } = this.props;
     //Style
 
@@ -29,25 +27,24 @@ class Banner extends React.Component {
             number={number}
             imageUrl={imageUrl}
             altProduct={altProduct}
-            productImage_lg={productImage_lg}
-            productImage_md={productImage_md}
-            productImage_sm={productImage_sm}
             title={title}
             description={description}
             cta={cta}
             reflect={reflect}
             darktheme={darktheme}
+            link={link}
           />
         ) : (
-            <BannerCenter
-              number={number}
-              imageUrl={imageUrl}
-              title={title}
-              description={description}
-              cta={cta}
-              darktheme={darktheme}
-            />
-          )}
+          <BannerCenter
+            number={number}
+            imageUrl={imageUrl}
+            title={title}
+            description={description}
+            cta={cta}
+            darktheme={darktheme}
+            link={link}
+          />
+        )}
       </Container>
     );
   }

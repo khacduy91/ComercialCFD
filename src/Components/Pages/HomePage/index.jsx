@@ -16,7 +16,7 @@ class HomePage extends React.Component {
         <HeroBanner />
         <SectionMenWomen />
         <Service />
-        <DealOfDay />
+        {/* <DealOfDay /> */}
         <TrendingProduct />
         <LatestNews />
       </Container>

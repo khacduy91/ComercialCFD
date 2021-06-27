@@ -1,0 +1,358 @@
+.news {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0;
+    padding: 0;
+    margin: 0 auto;
+    padding: 58px 0 0;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 1px;
+        width: 100%;
+        background-color: #e2e2e2;
+
+    }
+
+
+
+    .left {
+        max-width: 927px;
+        padding: 0 36px 0 0;
+
+        &::before {
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 100%;
+            width: 1px;
+            background-color: #e2e2e2;
+        }
+    }
+
+
+
+    &-header {
+        &-image {
+            width: 100%;
+        }
+
+        &-title {
+            width: 90%;
+            margin-top: -40px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 40px 30px 0;
+            font-family: "Asap", sans-serif;
+            background: white;
+            position: relative;
+
+            h2 {
+                font-size: 30px;
+                line-height: 1;
+                font-weight: 700;
+                color: #232323;
+                padding: 0 0 10px;
+                margin: 0 0 10px;
+            }
+
+            p {
+                font-size: 14px;
+                line-height: 24px;
+                color: #666666;
+                padding: 0 0 15px;
+                margin: 0 0 6px;
+            }
+
+
+        }
+    }
+
+    &-body {
+        padding: 30px 70px;
+        font-family: "Asap", sans-serif;
+        font-size: 14px;
+        line-height: 24px;
+        color: #888;
+        font-weight: 500;
+        text-align: justify;
+
+        .qoute {
+            margin: 15px 0;
+            border-left: 2px solid;
+            font-weight: 500;
+            line-height: 1.5;
+            padding-left: 20px;
+            border-color: #ef3f49;
+        }
+
+    }
+
+    &-comment {
+        padding-top: 17px;
+        padding-bottom: 30px;
+
+
+        .title {
+            font-family: "Asap", sans-serif;
+            font-size: 20px;
+            line-height: 20px;
+            font-weight: 600;
+            color: #000;
+            margin-bottom: 5px;
+        }
+
+        .description {
+            font-family: "Asap", sans-serif;
+            font-size: 14px;
+            line-height: 24px;
+            font-weight: 500;
+            color: #888;
+            margin-bottom: 14px;
+        }
+
+        .text-area {
+            width: 100%;
+            font-family: "Asap", sans-serif;
+            padding: 10px 15px;
+            outline: none;
+            border: 0.5px solod #00000030;
+        }
+
+        .checkbox {
+            display: block;
+            width: 100%;
+        }
+
+        label {
+            line-height: 1;
+            padding-left: 5px;
+            font-family: "Asap", sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            color: #888;
+        }
+
+        .submit {
+            text-align: right;
+
+            button {
+
+                font-family: "Asap", sans-serif;
+                background: white;
+                color: #ef3f49;
+                border: 0.5px solid #ef3f49;
+                font-size: 15px;
+                line-height: 23px;
+                padding: 10px 20px;
+                font-weight: 700;
+                transition: all 0.25s ease;
+                cursor: pointer;
+
+                &:hover {
+                    background: #ef3f49;
+                    color: white;
+                }
+            }
+
+        }
+    }
+
+    &-inputgroup {
+        padding-bottom: 14px;
+    }
+
+
+
+    .right {
+        padding: 0 0 0 30px;
+        max-width: 273px;
+    }
+
+    &-search {
+        display: flex;
+        margin-bottom: 30px;
+
+
+        .search {
+            border: 0.5px solid #00000030;
+            outline: none;
+            height: 40px;
+            width: 100%;
+            padding: 9.8px;
+            font-family: "Asap", sans-serif;
+        }
+
+        .submit {
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 40px;
+            margin: 0;
+            padding: 9.8px;
+            line-height: 1;
+            font-family: "Asap", sans-serif;
+            font-size: 14px;
+            color: white;
+            background: #000;
+            outline: none;
+            border: none;
+        }
+
+    }
+
+    &-recentpost {
+        margin-bottom: 30px;
+
+        .title {
+            font-size: 17px;
+            font-family: "Asap", sans-serif;
+            margin: 0 0 10px;
+            padding: 0 0 10px;
+            line-height: 1.1;
+            color: #232323;
+            font-weight: 500;
+        }
+
+        .listgroup {
+            list-style: none;
+            padding: 0;
+
+
+            .link {
+                margin-bottom: 0.5em;
+                font-family: "Asap", sans-serif;
+                font-size: 14px;
+                line-height: 24px;
+                font-weight: 500;
+                color: #666666;
+                transition: all 0.25s ease;
+
+                &:hover {
+                    color: #ef3f49;
+
+                }
+            }
+        }
+    }
+
+    &-categories {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+
+        .title {
+            font-size: 17px;
+            font-family: "Asap", sans-serif;
+            margin: 0 0 10px;
+            padding: 0 0 10px;
+            line-height: 1.1;
+            color: #232323;
+            font-weight: 500;
+        }
+
+        .link {
+            padding: 8px 0;
+        }
+
+    }
+
+    &-recentcomment {
+        margin-bottom: 30px;
+
+        .title {
+            font-size: 17px;
+            font-family: "Asap", sans-serif;
+            margin: 0 0 10px;
+            padding: 0 0 10px;
+            line-height: 1.1;
+            color: #232323;
+            font-weight: 500;
+        }
+    }
+
+    &-tag {
+        margin-bottom: 30px;
+
+        .title {
+            font-size: 17px;
+            font-family: "Asap", sans-serif;
+            margin: 0 0 10px;
+            padding: 0 0 10px;
+            line-height: 1.1;
+            color: #232323;
+            font-weight: 500;
+        }
+
+        .button {
+            font-family: "Asap", sans-serif;
+            margin-bottom: 4px;
+            margin-right: 4px;
+            transition: all 0.25s ease;
+
+            &:hover {
+                color: #ef3f49;
+                border-color: #ef3f49;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width : 1200px) {
+    .news {
+        max-width: 960px;
+        padding-right: 10px;
+        padding-left: 10px;
+
+        .left {
+            padding: 3%;
+            width: 77.25%;
+        }
+
+        .right {
+            width: 22.75%;
+        }
+    }
+}
+
+
+@media screen and (max-width : 960px) {
+    .news {
+        width: 80%;
+        margin: 0 auto;
+
+        .left {
+            width: 100%;
+            padding-right: 0;
+            padding-left: 0;
+
+            &::before {
+                content: "";
+                position: absolute;
+                right: 0;
+                top: 0;
+                height: 100%;
+                width: 1px;
+                background-color: #e2e2e2;
+                display: none;
+            }
+        }
+
+        &-body {
+            padding: 20px
+        }
+
+        .right {
+            width: 100%;
+            padding-right: 0;
+            padding-left: 0;
+            max-width: unset;
+        }
+    }
+}

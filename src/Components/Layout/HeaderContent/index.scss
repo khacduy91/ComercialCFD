@@ -1,15 +1,18 @@
 .headerContent {
-  width: 80%;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 5px;
+  max-width: 1140px;
 }
 
 @media screen and (max-width: 992px) {
-  .HeaderContent {
+  .headerContent {
     width: 90%;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .HeaderContent {
+  .headerContent {
     width: 100%;
     padding: 0px 10px;
   }

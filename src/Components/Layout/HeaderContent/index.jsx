@@ -1,5 +1,6 @@
 import { Col, Row } from "antd";
-import React from "react";
+import React, { useEffect } from "react";
+
 import Container from "../../Atoms/Container";
 import HearderContact from "./Components/HearderContact";
 import MainHeader from "./Components/MainHeader";
@@ -9,19 +10,19 @@ import "./index.scss";
 
 export default function HeaderContent({ modalCartRef }) {
   return (
-    <Container className="headerContent" maxWidth="1140px" paddingTop="9.75px">
+    <div className="headerContent">
       {/* TopHeader */}
       <Row>
         <Col
           xs={{ span: 24 }}
           sm={{ span: 24 }}
-          md={{ span: 14 }}
+          md={{ span: 12 }}
           lg={{ span: 12 }}
           xl={{ span: 12 }}
         >
-          <HearderContact phone=" (888) 999-1234" />
+          <HearderContact phone="(888) 999-1234" />
         </Col>
-        <Col md={{ span: 10 }} lg={{ span: 12 }} xl={{ span: 12 }}>
+        <Col md={{ span: 12 }} lg={{ span: 12 }} xl={{ span: 12 }}>
           <SecondMenu modalCartRef={modalCartRef} />
         </Col>
       </Row>
@@ -29,6 +30,6 @@ export default function HeaderContent({ modalCartRef }) {
 
       <MainHeader />
       <MobileMenu />
-    </Container>
+    </div>
   );
 }

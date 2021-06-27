@@ -54,9 +54,13 @@ class MainHeader extends React.Component {
           </Link>
         </Menu.Item>
         <Menu.Item key="about" style={subMenuStyle}>
-          <Link to="/about" className="mainHeader-button">
+          <a
+            href="https://khacduy91.github.io/DuyVuCV/"
+            target="_blank"
+            className="mainHeader-button"
+          >
             ABOUT
-          </Link>
+          </a>
         </Menu.Item>
 
         {/* Logo */}

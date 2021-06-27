@@ -47,14 +47,9 @@ function ModalCart(props, ref) {
         {/* Header  */}
         <div className="modalCart-header">
           <p className="modalCart-header-p">Your Cart {cart.num}</p>
-          <button
-            className="modalCart-header-button"
-            onClick={(e) => {
-              ref.current.close();
-            }}
-          >
+          <Button className="modalCart-header-button" onClick={close}>
             x
-          </button>
+          </Button>
         </div>
         {/* Cart Table  */}
         <div className="modalCart-table">
@@ -73,7 +68,7 @@ function ModalCart(props, ref) {
           </div>
           <div className="modalCart-footer-cta">
             <Link
-              to={isLogged ? "/check-out" : "auth"}
+              to={isLogged ? "/check-out" : "/auth"}
               onClick={(e) => {
                 ref.current.close();
               }}
@@ -109,9 +104,7 @@ function ModalCart(props, ref) {
 
       <div
         className={`modalCart-background ${isOpen ? "modalCart-fade" : ""}`}
-        onClick={(e) => {
-          ref.current.close();
-        }}
+        onClick={(e) => close()}
       ></div>
     </>,
     document.getElementById("modal")

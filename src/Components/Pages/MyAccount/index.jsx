@@ -49,21 +49,15 @@ export default function MyAccount() {
               <Link to={`${match.path}`}>My order</Link>
             </li>
             <li className="myAccount-list-item">
-              <Link to={`${match.path}/account`}>My account</Link>
+              <Link to="/my-account/info">My account</Link>
             </li>
           </ul>
         </Col>
 
         <Col className="myAccount-content" xl={{ span: 16 }}>
           <Switch>
-            <Route exact path={`${match.path}/c`} component={Info} />
-            <Route
-              exact
-              path={`${match.path}`}
-              component={() => (
-                <Order recipe={recipe} categoriesArray={categoriesArray} />
-              )}
-            />
+            <Route exact path="/my-account" component={Order} />
+            <Route path="/my-account/info" component={Info} />
           </Switch>
         </Col>
       </Row>

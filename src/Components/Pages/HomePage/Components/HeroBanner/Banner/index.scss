@@ -22,7 +22,9 @@
       font-weight: 900;
       transition: all 0.5s ease;
       text-transform: uppercase;
+      text-shadow: 1px 2px 4px #188fffaf;
       line-height: 1;
+
       &:hover {
         padding-left: 5px;
         color: #232323;
@@ -59,6 +61,8 @@
     &-Row {
       &-Link {
         font-size: 60px;
+
+        text-shadow: 1px 2px 4px #188fffaf;
       }
 
       &-CTA {
@@ -71,7 +75,7 @@
 @media screen and (max-width: 768px) {
   .banner {
     &-Row {
-      background-position: right;
+      background-position: 30% 30%;
 
       &-Link {
         font-size: 55px;
@@ -89,9 +93,9 @@
   .banner {
     &-Row {
       padding: 0 10px;
-      background-position: left;
+      background-position: 30% 30%;
 
-      & > div {
+      &>div {
         max-height: 300px;
       }
 
@@ -126,9 +130,9 @@
   .banner {
     &-Row {
       padding: 0 10px;
-      background-position: left;
+      background-position: 30% 30%;
 
-      & > div {
+      &>div {
         max-height: 300px;
       }
 

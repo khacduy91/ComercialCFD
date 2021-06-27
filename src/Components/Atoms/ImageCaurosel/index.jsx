@@ -1,6 +1,6 @@
 import { Carousel, Col, Row, Skeleton } from "antd";
 import SkeletonImage from "antd/lib/skeleton/Image";
-import { doc } from "prettier";
+
 import React, { useEffect, useRef, useState } from "react";
 import Container from "../../Atoms/Container";
 import "./index.scss";
