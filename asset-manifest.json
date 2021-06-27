@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/ComercialCFD/static/css/main.dca544c5.chunk.css",
+    "main.js": "/ComercialCFD/static/js/main.87ab3a71.chunk.js",
+    "main.js.map": "/ComercialCFD/static/js/main.87ab3a71.chunk.js.map",
+    "runtime-main.js": "/ComercialCFD/static/js/runtime-main.e3795872.js",
+    "runtime-main.js.map": "/ComercialCFD/static/js/runtime-main.e3795872.js.map",
+    "static/css/2.a80a6176.chunk.css": "/ComercialCFD/static/css/2.a80a6176.chunk.css",
+    "static/js/2.a16fa423.chunk.js": "/ComercialCFD/static/js/2.a16fa423.chunk.js",
+    "static/js/2.a16fa423.chunk.js.map": "/ComercialCFD/static/js/2.a16fa423.chunk.js.map",
+    "static/js/3.12893621.chunk.js": "/ComercialCFD/static/js/3.12893621.chunk.js",
+    "static/js/3.12893621.chunk.js.map": "/ComercialCFD/static/js/3.12893621.chunk.js.map",
+    "index.html": "/ComercialCFD/index.html",
+    "static/css/2.a80a6176.chunk.css.map": "/ComercialCFD/static/css/2.a80a6176.chunk.css.map",
+    "static/css/main.dca544c5.chunk.css.map": "/ComercialCFD/static/css/main.dca544c5.chunk.css.map",
+    "static/js/2.a16fa423.chunk.js.LICENSE.txt": "/ComercialCFD/static/js/2.a16fa423.chunk.js.LICENSE.txt",
+    "static/media/antd.less": "/ComercialCFD/static/media/antd.1fb1fa95.less"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e3795872.js",
+    "static/css/2.a80a6176.chunk.css",
+    "static/js/2.a16fa423.chunk.js",
+    "static/css/main.dca544c5.chunk.css",
+    "static/js/main.87ab3a71.chunk.js"
+  ]
+}
