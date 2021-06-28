@@ -53,7 +53,7 @@ export default function App() {
               <Route exact path="/ComercialCFD/check-out" component={() => (<CheckOut modalSuccessCheckOutRef={modalSuccessCheckOutRef} />)} />
               <Route exact path="/ComercialCFD/auth" component={Auth} />
               <Route  path="/ComercialCFD/news" component={News} />
-         
+              <Redirect to="/ComercialCFD" />
             </Switch>
           </Content>
 
