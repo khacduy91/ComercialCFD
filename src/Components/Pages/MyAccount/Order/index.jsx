@@ -45,7 +45,9 @@ export default function Order(props) {
             </Panel>
           ))
         ) : (
-          <div>Bạn chưa order gì hết luôn đó</div>
+          <div className="myAccount-blank-tab">
+            Bạn chưa order gì hết luôn đó
+          </div>
         )}
       </Collapse>
       {/* End Collapse  */}

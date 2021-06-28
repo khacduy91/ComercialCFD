@@ -73,8 +73,9 @@ export default function FooterContent({ modalCartRef }) {
       </Row>
       <Container width="100%" className="footerContent" maxWidth="1140px">
         <Container width="100%">
-          <Row>
+          <Row className="footerContent-row">
             <Col
+              className="footerContent-col"
               xl={{ span: 7 }}
               lg={{ span: 7 }}
               md={{ span: 7 }}

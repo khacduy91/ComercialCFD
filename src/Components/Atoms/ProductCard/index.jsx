@@ -64,7 +64,10 @@ export default function ProductCard(props) {
                 style={{ width: 230, height: 250 }}
               ></SkeletonImage>
             ) : (
-              <Link to={`/shop/detail/${slug}`} className="productCard-Image">
+              <Link
+                to={`/ComercialCFD/shop/detail/${slug}`}
+                className="productCard-Image"
+              >
                 <img alt="example" src={imageUrl} />
               </Link>
             )}
@@ -78,7 +81,10 @@ export default function ProductCard(props) {
             className="productCard-Meta"
             title={
               <>
-                <Link className="productCard-Title" to={`/shop/detail/${slug}`}>
+                <Link
+                  className="productCard-Title"
+                  to={`/ComercialCFD/shop/detail/${slug}`}
+                >
                   {productName}
                 </Link>
                 <Button

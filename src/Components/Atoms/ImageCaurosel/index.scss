@@ -12,18 +12,21 @@
     height: 100%;
     width: 100%;
   }
+
   &-caurosel {
     padding-bottom: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
+
   &-button-image {
     width: 100px;
     cursor: pointer;
-    &-active {
-      border: 1px solid #1890ff;
-    }
+
+    // &-active {
+    //   border: 1px solid #1890ff;
+    // }
   }
 }
 
@@ -39,6 +42,9 @@
   // height: 531px;
   object-fit: contain;
 }
+
+
+
 
 @media screen and (max-width: 576px) {
   .imageCaurosel {

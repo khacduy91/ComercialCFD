@@ -41,14 +41,14 @@ class MainHeader extends React.Component {
         style={menuStyle}
       >
         <Menu.Item key="home" style={subMenuStyle}>
-          <Link to="/" className="mainHeader-button">
+          <Link to="/ComercialCFD" className="mainHeader-button">
             HOME
           </Link>
         </Menu.Item>
 
         <Menu.Item key="shop" style={subMenuStyle}>
           <Link
-            to="/shop/category/dien-thoai-may-tinh-bang-id1789"
+            to="/ComercialCFD/shop/category/dien-thoai-may-tinh-bang-id1789"
             className="mainHeader-button"
           >
             SHOP
@@ -66,7 +66,7 @@ class MainHeader extends React.Component {
 
         {/* Logo */}
         <Button type="link" id="logo">
-          <Link to="/">
+          <Link to="/ComercialCFD">
             <img
               src={`${imgUrl}Image/4375057785_952d0b97-7f3e-419b-8ed4-4c8e62fac080.png`}
               alt="logo"
@@ -75,13 +75,13 @@ class MainHeader extends React.Component {
         </Button>
 
         <Menu.Item key="news" style={subMenuStyle}>
-          <Link to="/news" className="mainHeader-button">
+          <Link to="/ComercialCFD/news" className="mainHeader-button">
             NEWS
           </Link>
         </Menu.Item>
 
         <Menu.Item key="contact" style={subMenuStyle}>
-          <Link to="/contact" className="mainHeader-button">
+          <Link to="/ComercialCFD/contact" className="mainHeader-button">
             CONTACT
           </Link>
         </Menu.Item>

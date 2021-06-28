@@ -23,24 +23,18 @@ export default function SecondMenu({ modalCartRef }) {
   const account = (
     <Menu className="secondMenu-submenu">
       <Menu.Item>
-        <Link to="/cart">
-          <Button type="link" href="/#">
-            CART
-          </Button>
+        <Link to="/ComercialCFD/cart">
+          <Button type="link">CART</Button>
         </Link>
       </Menu.Item>
       <Menu.Item>
-        <Link to="/check-out">
-          <Button type="link" href="/#">
-            CHECK OUT
-          </Button>
+        <Link to="/ComercialCFD/check-out">
+          <Button type="link">CHECK OUT</Button>
         </Link>
       </Menu.Item>
       <Menu.Item>
-        <Link to="/my-account">
-          <Button type="link" href="/#">
-            MY ACCOUNT
-          </Button>
+        <Link to="/ComercialCFD/my-account">
+          <Button type="link">MY ACCOUNT</Button>
         </Link>
       </Menu.Item>
       <Menu.Item className="buttonLogout">

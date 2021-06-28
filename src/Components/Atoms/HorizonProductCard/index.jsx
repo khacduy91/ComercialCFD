@@ -8,7 +8,7 @@ export default function HorizonProductCard(props) {
   const { imageUrl, title, price, slug } = props;
 
   function changeLocate(location) {
-    location.pathname = `/shop/detail/${slug}`
+    location.pathname = `/ComercialCFD/shop/detail/${slug}`;
   }
   return (
     <Container className="horizonProductCard">
@@ -29,7 +29,12 @@ export default function HorizonProductCard(props) {
           sm={{ span: 16 }}
           xs={{ span: 16 }}
         >
-          <Link to={location => changeLocate(location)} className="horizonProductCard-title">{title}</Link>
+          <Link
+            to={(location) => changeLocate(location)}
+            className="horizonProductCard-title"
+          >
+            {title}
+          </Link>
           <p className="horizonProductCard-price">{price}</p>
         </Col>
       </Row>

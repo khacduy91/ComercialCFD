@@ -28,7 +28,8 @@ export default function SubTotalCart() {
   let cart = useSelector((state) => state.cart);
 
   function changeLocate(location) {
-    location.pathname = "/shop/category/dien-thoai-may-tinh-bang-id1789";
+    location.pathname =
+      "/ComercialCFD/shop/category/dien-thoai-may-tinh-bang-id1789";
   }
 
   const isLogged = useSelector((state) => state.auth.isLogged);
@@ -61,7 +62,7 @@ export default function SubTotalCart() {
           Shipping cost calculated at Checkout *
         </p>
       </Container>
-      <Link to="/check-out">
+      <Link to="/ComercialCFD/check-out">
         <Button type="primary" block size="large" style={styleCheckout}>
           {isLogged ? "Continue to Checkout" : "Login for Checkout"}
         </Button>

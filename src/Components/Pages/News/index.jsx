@@ -23,8 +23,8 @@ export default function News() {
   return (
     <Row className="news">
       <Switch>
-        <Route exact path="/news" component={NewsList} />
-        <Route path="/news/:title" component={NewsDetail} />
+        <Route exact path="/ComercialCFD/news" component={NewsList} />
+        <Route path="/ComercialCFD/news/:title" component={NewsDetail} />
       </Switch>
 
       <Col className="news-col right">

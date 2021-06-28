@@ -13,7 +13,7 @@ export default function LinkCategory(props) {
   );
 
   function changlocate(location) {
-    location.pathname = `/shop/category/${to}`;
+    location.pathname = `/ComercialCFD/shop/category/${to}`;
   }
 
   return (

@@ -11,7 +11,9 @@ import Register from "./Register";
 export default function Auth() {
   let isLogged = useSelector((state) => state.auth.isLogged);
   if (isLogged)
-    return <Redirect to="/shop/category/dien-thoai-may-tinh-bang-id1789" />;
+    return (
+      <Redirect to="/ComercialCFD/shop/category/dien-thoai-may-tinh-bang-id1789" />
+    );
   return (
     <>
       <CustomHead title="cart" />

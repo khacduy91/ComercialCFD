@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import Container from "../../../../Atoms/Container";
 import { MenuOutlined } from "@ant-design/icons";
 import "./index.scss";
+import { imgUrl } from "../../../../../api/config";
 
 export default function MobileMenu() {
   function _Menu(x, y, z) {
@@ -26,9 +27,9 @@ export default function MobileMenu() {
     <Container className="mobileMenu">
       <Row align="middle" justify="space-between">
         <Col xs={{ span: 12 }} sm={{ span: 12 }}>
-          <Link to="/">
+          <Link to="/ComercialCFD">
             <img
-              src="/Image/4375057785_952d0b97-7f3e-419b-8ed4-4c8e62fac080.png"
+              src={`${imgUrl}/Image/4375057785_952d0b97-7f3e-419b-8ed4-4c8e62fac080.png`}
               alt="mobile-logo"
               id="mobile-logo"
             />
@@ -58,13 +59,16 @@ export default function MobileMenu() {
             <ul>
               <div className="line"></div>
               <li className="mobileMenu-container-item">
-                <Link to="/" onClick={() => _Menu(0, "-100%", "-100%")}>
+                <Link
+                  to="/ComercialCFD"
+                  onClick={() => _Menu(0, "-100%", "-100%")}
+                >
                   HOME
                 </Link>
               </li>
               <li className="mobileMenu-container-item">
                 <Link
-                  to="/shop/category/dien-thoai-may-tinh-bang-id1789"
+                  to="/ComercialCFD/shop/category/dien-thoai-may-tinh-bang-id1789"
                   onClick={() => _Menu(0, "-100%", "-100%")}
                 >
                   SHOP
@@ -81,18 +85,24 @@ export default function MobileMenu() {
               </li>
 
               <li className="mobileMenu-container-item">
-                <Link to="/news" onClick={() => _Menu(0, "-100%", "-100%")}>
+                <Link
+                  to="/ComercialCFD/news"
+                  onClick={() => _Menu(0, "-100%", "-100%")}
+                >
                   NEWS
                 </Link>
               </li>
               <li className="mobileMenu-container-item">
-                <Link to="/cart" onClick={() => _Menu(0, "-100%", "-100%")}>
+                <Link
+                  to="/ComercialCFD/cart"
+                  onClick={() => _Menu(0, "-100%", "-100%")}
+                >
                   CART
                 </Link>
               </li>
               <li className="mobileMenu-container-item">
                 <Link
-                  to="/my-account"
+                  to="/ComercialCFD/my-account"
                   onClick={() => _Menu(0, "-100%", "-100%")}
                 >
                   MY-ACCOUNT

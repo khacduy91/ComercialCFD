@@ -46,13 +46,13 @@ export default function App() {
 
           <Content style={{ background: "white" }} >
             <Switch>
-              <Route exact path="/" component={HomePage} />
-              <Route path="/shop/:slug/:slug" component={ShopPage} />
-              <Route exact path="/cart" component={CartPage} />
-              <Route path="/my-account" component={MyAccount} />
-              <Route exact path="/check-out" component={() => (<CheckOut modalSuccessCheckOutRef={modalSuccessCheckOutRef} />)} />
-              <Route exact path="/auth" component={Auth} />
-              <Route  path="/news" component={News} />
+              <Route exact path="/ComercialCFD" component={HomePage} />
+              <Route path="/ComercialCFD/shop/:slug/:slug" component={ShopPage} />
+              <Route exact path="/ComercialCFD/cart" component={CartPage} />
+              <Route path="/ComercialCFD/my-account" component={MyAccount} />
+              <Route exact path="/ComercialCFD/check-out" component={() => (<CheckOut modalSuccessCheckOutRef={modalSuccessCheckOutRef} />)} />
+              <Route exact path="/ComercialCFD/auth" component={Auth} />
+              <Route  path="/ComercialCFD/news" component={News} />
          
             </Switch>
           </Content>

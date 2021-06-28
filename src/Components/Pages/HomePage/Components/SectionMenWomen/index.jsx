@@ -35,7 +35,7 @@ class SectionMenWomen extends React.Component {
                 cta="View All Products"
                 className="sectionMenWomen-BannerProduct"
                 gutter="12"
-                link="/shop/category/dien-gia-dung-id1882"
+                link="/ComercialCFD/shop/category/dien-gia-dung-id1882"
               />
             </Col>
 
@@ -53,7 +53,7 @@ class SectionMenWomen extends React.Component {
                 cta="View All Products"
                 className="sectionMenWomen-BannerProduct"
                 gutter="12"
-                link="/shop/category/may-anh-quay-phim-id1801"
+                link="/ComercialCFD/shop/category/may-anh-quay-phim-id1801"
                 darkTheme
               />
             </Col>
@@ -71,7 +71,7 @@ class SectionMenWomen extends React.Component {
                 cta="View All Products"
                 className="sectionMenWomen-BannerProduct"
                 gutter="12"
-                link="/shop/category/sach-vpp-qua-tang-id8322"
+                link="/ComercialCFD/shop/category/sach-vpp-qua-tang-id8322"
                 darkTheme
               />
             </Col>
@@ -88,7 +88,7 @@ class SectionMenWomen extends React.Component {
                 description="Điện thoại"
                 cta="View All Products"
                 className="sectionMenWomen-BannerProduct"
-                link="/shop/category/dien-thoai-may-tinh-bang-id1789"
+                link="/ComercialCFD/shop/category/dien-thoai-may-tinh-bang-id1789"
                 gutter="12"
               />
             </Col>

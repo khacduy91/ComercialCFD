@@ -14,6 +14,8 @@ class HeroBanner extends React.Component {
       autoplay: true,
       dots: { className: "custom-dots" },
       lazyload: true,
+      draggable: true,
+      swipeToSlide: true,
     };
     return (
       <Container className="heroBanner">

@@ -23,8 +23,14 @@ export default function ShopDetail() {
           {/* // Left Bar  */}
           {/*  */}
           <Switch>
-            <Route path="/shop/category/:category" component={ProductList} />
-            <Route path="/shop/detail/:slug" component={ProductDetail} />
+            <Route
+              path="/ComercialCFD/shop/category/:category"
+              component={ProductList}
+            />
+            <Route
+              path="/ComercialCFD/shop/detail/:slug"
+              component={ProductDetail}
+            />
           </Switch>
         </Col>
 

@@ -68,7 +68,7 @@ function ModalCart(props, ref) {
           </div>
           <div className="modalCart-footer-cta">
             <Link
-              to={isLogged ? "/check-out" : "/auth"}
+              to={isLogged ? "/ComercialCFD/check-out" : "/ComercialCFD/auth"}
               onClick={(e) => {
                 ref.current.close();
               }}
@@ -90,7 +90,7 @@ function ModalCart(props, ref) {
               size="large"
             >
               <Link
-                to="/cart"
+                to="/ComercialCFD/cart"
                 onClick={(e) => {
                   ref.current.close();
                 }}

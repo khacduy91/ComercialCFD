@@ -32,7 +32,18 @@
       width: 100%;
     }
   }
+
+
+  &-blank-tab {
+    padding: 20px !important;
+    min-height: 40vh;
+    display: flex;
+    // align-items: center;
+    justify-content: center;
+    border: 1px solid red;
+  }
 }
+
 
 .order {
   &-content {
@@ -41,6 +52,7 @@
         top: 50% !important;
         transform: translateY(-50%);
       }
+
       .ant-collapse-content-box {
         padding: 5px !important;
       }
@@ -51,6 +63,7 @@
 .headerPanel {
   display: flex;
   justify-content: space-between;
+
   // align-items: center;
   &-text {
     margin-bottom: 0;
@@ -59,9 +72,11 @@
     display: flex;
     flex-wrap: wrap;
   }
+
   .date {
     font-style: italic;
   }
+
   .price {
     font-weight: 600;
     text-align: right;
@@ -70,6 +85,7 @@
 
   .category {
     place-content: flex-end;
+
     span {
       font-size: 12px;
       padding: 1px 2px;
@@ -88,6 +104,7 @@
       &.category {
         place-content: flex-start;
       }
+
       &.price {
         place-content: flex-start;
       }

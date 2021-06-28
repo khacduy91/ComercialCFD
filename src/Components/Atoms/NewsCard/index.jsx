@@ -12,18 +12,18 @@ class NewsCard extends React.Component {
       <Container width="100%" className="newsCard">
         <Row justify="center">
           <Col span="24" className="newsCard-Col">
-            <Link to="/news/title">
+            <Link to="/ComercialCFD/news/title">
               <img src={imageUrl} alt={imageAlt} className="newsCard-image" />
             </Link>
             <Container width="90%" className="newsCard-Container">
-              <Link to="/news/title">
+              <Link to="/ComercialCFD/news/title">
                 <h3 className="newsCard-Headline">{headline}</h3>
               </Link>
               <p className="newsCard-Meta">
                 BY <span>{author}</span> | {postDay}
               </p>
               <p className="newsCard-Content">{content}</p>
-              <Link to="/news/title">
+              <Link to="/ComercialCFD/news/title">
                 <Button className="newsCard-Button" type="primary">
                   read more
                 </Button>

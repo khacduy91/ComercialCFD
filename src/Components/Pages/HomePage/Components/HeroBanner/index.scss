@@ -3,10 +3,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 
-  > div {
+  >div {
     width: 100%;
   }
+
   .custom-dots li button {
     background-color: #1890ff;
     height: 10px;

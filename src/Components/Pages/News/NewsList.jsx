@@ -8,7 +8,7 @@ export default function NewsList() {
   return (
     <Col className="news-col left">
       <div className="news-header">
-        <Link to="/news/title">
+        <Link to="/ComercialCFD/news/title">
           <img
             src={`${imgUrl}Image/News/News1.jpg`}
             alt=""
@@ -16,7 +16,7 @@ export default function NewsList() {
           />
         </Link>
         <div className="news-header-title">
-          <Link to="/news/title">
+          <Link to="/ComercialCFD/news/title">
             <h2>An Inside Look at Paris Fashion Week</h2>
           </Link>
           <p>
@@ -33,7 +33,7 @@ export default function NewsList() {
       </div>
 
       <div className="news-header">
-        <Link to="/news/title">
+        <Link to="/ComercialCFD/news/title">
           <img
             src={`${imgUrl}Image/News/News1.jpg`}
             alt=""
@@ -41,7 +41,7 @@ export default function NewsList() {
           />
         </Link>
         <div className="news-header-title">
-          <Link to="/news/title">
+          <Link to="/ComercialCFD/news/title">
             <h2>An Inside Look at Paris Fashion Week</h2>
           </Link>
           <p>
@@ -58,7 +58,7 @@ export default function NewsList() {
       </div>
 
       <div className="news-header">
-        <Link to="/news/title">
+        <Link to="/ComercialCFD/news/title">
           <img
             src={`${imgUrl}Image/News/News1.jpg`}
             alt=""
@@ -66,7 +66,7 @@ export default function NewsList() {
           />
         </Link>
         <div className="news-header-title">
-          <Link to="/news/title">
+          <Link to="/ComercialCFD/news/title">
             <h2>An Inside Look at Paris Fashion Week</h2>
           </Link>
 
