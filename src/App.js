@@ -3,7 +3,7 @@ import Layout, { Content, Footer, Header } from "antd/lib/layout/layout";
 import "antd/dist/antd.css";
 import "antd/dist/antd.less";
 import "./index.css";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
 import HomePage from "./Components/Pages/HomePage";
 import ShopPage from "./Components/Pages/ShopPage";
 import HeaderContent from "./Components/Layout/HeaderContent";
