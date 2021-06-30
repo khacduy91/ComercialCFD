@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/ComercialCFD/static/css/main.942a4316.chunk.css",
-    "main.js": "/ComercialCFD/static/js/main.2dcc8f2d.chunk.js",
-    "main.js.map": "/ComercialCFD/static/js/main.2dcc8f2d.chunk.js.map",
+    "main.js": "/ComercialCFD/static/js/main.39e7ac9e.chunk.js",
+    "main.js.map": "/ComercialCFD/static/js/main.39e7ac9e.chunk.js.map",
     "runtime-main.js": "/ComercialCFD/static/js/runtime-main.e3795872.js",
     "runtime-main.js.map": "/ComercialCFD/static/js/runtime-main.e3795872.js.map",
     "static/css/2.a80a6176.chunk.css": "/ComercialCFD/static/css/2.a80a6176.chunk.css",
@@ -21,6 +21,6 @@
     "static/css/2.a80a6176.chunk.css",
     "static/js/2.a16fa423.chunk.js",
     "static/css/main.942a4316.chunk.css",
-    "static/js/main.2dcc8f2d.chunk.js"
+    "static/js/main.39e7ac9e.chunk.js"
   ]
 }
