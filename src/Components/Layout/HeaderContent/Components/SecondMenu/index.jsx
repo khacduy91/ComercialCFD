@@ -56,7 +56,7 @@ export default function SecondMenu({ modalCartRef }) {
   return (
     <Container className="secondMenu">
       {!auth.isLogged ? (
-        <Link to="/auth">
+        <Link to="/ComercialCFD/auth">
           <Button
             type="link"
             style={buttonStyle}
