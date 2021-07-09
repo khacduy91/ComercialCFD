@@ -49,7 +49,7 @@ export default function ProductDetail() {
           {isLoading ? (
             <SkeletonInput
               active={true}
-              style={{ width: 500, height: 300 }}
+              style={{ width: "100%", height: 300 }}
               active
             ></SkeletonInput>
           ) : (

@@ -40,7 +40,7 @@ export default function TrendingProduct() {
                 // productName={ele?.name}
                 // productPrice={ele?.price}
                 // imageUrl={ele?.thumbnail_url}
-                // loading={shop.isLoading}
+                loading={shop.isLoading}
                 key={index}
                 xl="6"
                 lg="6"
@@ -59,8 +59,8 @@ export default function TrendingProduct() {
                     productPrice={ele?.price}
                     imageUrl={ele?.thumbnail_url}
                     loading={shop.isLoading}
-                    slug={ele.slug}
-                    _id={ele._id}
+                    slug={ele?.slug}
+                    _id={ele?._id}
                     key={index}
                     xl="6"
                     lg="6"
