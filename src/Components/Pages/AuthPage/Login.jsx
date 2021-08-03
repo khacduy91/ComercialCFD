@@ -25,7 +25,7 @@ export default function Login() {
         username: { required: true, pattern: "email" },
         password: { required: true },
       },
-      massage: {
+      message: {
         username: {
           required: "Username không được để trống",
         },
